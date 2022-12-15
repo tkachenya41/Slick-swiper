@@ -3,10 +3,10 @@ $(document).ready(function () {
     arrows: true,
     dots: true,
     adaptiveHeight: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     speed: 300,
     easing: "ease",
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     draggable: false,
     swipe: true,
@@ -17,13 +17,19 @@ $(document).ready(function () {
     slidesPerRow: 3,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
         },
